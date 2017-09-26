@@ -17,6 +17,15 @@ h2{
 	padding: 72;
 	border: 2px solid white;
 }
+
+#index{
+	font-family: "Centaur MT Std";
+	color: white;
+	background-color: #45a845;
+	font-size: 72;
+	text-align: center;
+	margin-top: 36;
+}
 img{
 	display: block;
 	margin: auto;
