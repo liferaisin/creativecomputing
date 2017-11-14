@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+body{
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+#avatar{
+	width:100%;
+	height: 100%;
+	background: url("atla.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+/*}
+#philly{
+	background-image: url("iasip.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+}
+#bojack{
+	background-image: url("bj.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	width: 100%;*/
+}
+</style>
+</head>
+<body>
+	<div id = "avatar"></div>
+<!-- 	<div id = "philly"></div>
+	<div id = "bojack"></div> -->
+<script>
+var index = 0;
+// var airbender = "atla.gif";
+
+// var sunny = "5";
+
+// var horse = true;
+
+// var channels = [ airbender, sunny, horse ];
+
+// console.log(channels[2]);
+
+document.body.addEventListener("keydown", function(event){
+	if(event.keyCode = 40){
+		var channels = [ "atla.gif", "iasip.gif", "bj.gif" ];
+		channels[index];
+		var channeldiv = document.getElementById("avatar");
+		channeldiv.style.backgroundImage = "url('" + channels[index] + "')";
+		index = index + 1;
+	}
+
+	if(event.keyCode = 38){
+		var channels = [ "atla.gif", "iasip.gif", "bj.gif" ];
+		channels[index];
+		var channeldiv = document.getElementById("avatar");
+		channeldiv.style.backgroundImage = "url('" + channels[index] + "')";
+		function reverse(){
+			var reverse = channels.reverse();
+			index = reverse;
+		}
+	}
+});
+</script>
+</body>
+</html>
